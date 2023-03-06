@@ -1,0 +1,101 @@
+
+.container {
+  margin: 0 7%;
+  text-decoration: center;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-bottom:5% ;
+  transform: translateY(-40px);
+
+}
+.card_link{
+    color: black;
+}
+.poster {
+  height: 25rem;
+  width: 80%;
+  border-radius: 40px;
+  margin: 20px auto 0 auto;
+   background-image: url("https://cdn.shopify.com/s/files/1/0087/2506/9860/collections/1_jfR0trcAPT3udktrFkOebA.jpg?v=1566963161"); 
+ background-size: cover;
+  transform: translateY(50px);
+  box-shadow: 0px 0px 4px 0px white;
+  transition: all 1s ease-in;
+  opacity: 0.8;
+}
+.poster:hover {
+  box-shadow: 0px 0px 5.5px 4px var(--darkPink);
+  opacity: 1;
+}
+.content {
+  /* display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(192.767px, 1fr));
+  gap: 30px; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around;
+}
+
+@media only screen and (max-width: 840px) {
+  /* .content * {
+    min-height: 200px; 
+  } */
+  .filter {
+    margin: 0 auto;
+    transform: translateX(12px);
+
+  }
+    .poster {
+    height: 10rem;
+  }
+}
+.filter {
+  width: 340px;
+  /* height: 40px; */
+  border-radius: 20px;
+  border: 3px solid var(--pink);
+  display: grid;
+  grid-template-columns: repeat(4, minmax(16px, auto));
+  gap: 8px;
+  /* margin: -9px 0; */
+  margin: 0 0 0px 0px;
+
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  box-shadow: -1px 0px 10px 5.5px var(--pink);
+  transition: all 0.7s ease-in;
+}
+.filter p {
+  margin: 0px 0;
+  cursor: pointer;
+  padding: 9px;
+  height: 105%;
+
+  width: 100%;
+  border-radius: 20px;
+  transition: all 0.2s ease-in-out;
+  color: aliceblue;
+  font-size: 76%;
+  transition: all 0.1s ease-in;
+
+  /* color: #A70733; */
+  /* box-shadow: -1px 0px 4px 3px var(--pink); */
+}
+
+.filter p:first-child {
+  transform: translateX(-6px);
+}
+.filter p:last-child {
+  transform: translateX(6px);
+  /* font-size: 90%; */
+}
+
+@media only screen and (max-width: 840px) {
+
+
+  
+}

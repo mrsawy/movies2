@@ -1,0 +1,82 @@
+.hole_container *{
+    display: inline-block;
+    margin: 5px 0;
+}
+.title{
+    margin-top: 120px;
+    margin-bottom: 50px;
+
+    color: aliceblue;
+    border: 1px solid var(--pink);
+    /* display: inline-block;
+    position: absolute; */
+    /* margin: 2% 0 0% 10%; */
+    width: 190px;
+    height: 45px;
+  border-radius: 30px;
+  padding-top: 8px;
+  font-size: larger;
+  align-items: center;
+  text-align: center;
+  z-index: 2;
+
+ box-shadow: -1px 0px 10px 5.5px var(--pink);
+}
+.title p {
+    transform: translate(-3px,-5px);
+}
+
+.hole_container{
+    text-align:left ;
+    margin: 0px auto;
+    padding: 0  10%;
+
+    color:aliceblue;
+    display: flex;
+    flex-direction: column;
+    background-image:linear-gradient(to bottom, #1D1D1D, rgba(37, 29, 66, 0.7)) ;
+}
+.own_review form{
+    display: flex;
+    flex-direction: column;
+    width:50%;
+    gap:10px
+    /* align-items: center; */
+}
+.form_textarea{
+    color: aliceblue;
+    height: 6rem;
+    /* resize: none; */
+    background-color: rgba(0, 0, 0, 0.2);
+    outline: none;
+    border: none;
+    box-shadow: -1px 0px 10px 5.5px var(--pink);
+
+    /* rows:6px; */
+
+}
+.form_label{
+    box-shadow: -1px 0px 4px 2px var(--darkPink);
+    outline:none;
+    border:none ;
+    border-radius: 12px;
+width: 100%;
+
+/* height: 1.7rem; */
+padding: 0.5rem;
+text-align: center;
+}
+.form_button{
+    width: 30%;
+    background-color: var(--pink);
+    box-shadow: -1px 0px 4px 2px var(--darkPink);
+    outline:none;
+    border:none ;
+    border-radius: 12px;
+    cursor: pointer;
+
+}
+.form_button:hover{
+    background-color: var(--darkPink);
+    box-shadow: -1px 0px 4px 2px var(--darkPink);
+}

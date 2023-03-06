@@ -1,0 +1,16 @@
+.read_more_button{
+   /* max-width:  6em; */
+    min-width: 50px;
+    transform: translateX(20px);
+    color: var(--pink);
+    opacity: 0.8;
+    font-size: 16px;
+    background-color: rgb(152, 135, 113 , 0);
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.read_more_button:hover{
+    color: var(--darkPink);
+
+}

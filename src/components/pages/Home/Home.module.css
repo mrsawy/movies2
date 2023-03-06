@@ -1,0 +1,26 @@
+.movies{
+    padding: 0 7%;
+}
+
+.section_title{
+  border-radius: 30px;
+  width: 190px;
+  box-shadow: -1px 0px 10px 5.5px var(--pink);
+  border: 1px solid var(--pink);
+  height: 45px;
+  margin: 2% 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+@media screen and (max-width:800px) {
+  .section_title{
+    margin: 10% 0;
+  }
+}
+/* .cardClasses{
+    width: 1000px ;
+border: 3px re;
+
+} */

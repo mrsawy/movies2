@@ -1,0 +1,309 @@
+.bigContainer {
+  position: relative;
+  overflow: hidden;
+  height: 82vh;
+  /* overflow:scroll; */
+
+
+  /* transform: translateX(-102%); */
+}
+
+.first_poster_container,
+.second_poster_container,
+.third_poster_container,
+.forth_poster_container
+ {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* height: 600px; */
+  background-size:cover;
+  opacity: 0.77;
+ transition: all 1s ease-in-out;
+  position: absolute;
+  /* width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  min-height: 600px;
+  background-size: cover;
+  opacity: 0.77; */
+}
+
+
+
+.prevBtn {
+  position: absolute;
+  top: 46%;
+  left: 5%;
+
+  /* color: ; */
+  background-color: rgba(62, 62, 63, 0.4);
+}
+
+.prevBtn,
+.nextBtn {
+  cursor: pointer;
+  z-index: 2;
+  padding: 0.6%;
+  width: 60px;
+  font-size: x-large;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  transition: all 0.2s;
+}
+
+.prevBtn:hover,
+.nextBtn:hover {
+  background-color: rgba(62, 62, 63, 1);
+  color: aliceblue;
+}
+.nextBtn {
+  position: absolute;
+  left: 91%;
+  bottom: 45.5%;
+  background-color: rgba(62, 62, 63, 0.7);
+}
+
+
+
+/* .first_poster_container,
+.second_poster_container {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  min-height: 600px;
+  background-size: cover;
+  opacity: 0.77;
+} */
+.first_poster_container {
+  background-image: linear-gradient(
+      to right,
+      rgb(7, 6, 6, 0.9),
+      rgb(7, 6, 6, 0.6),
+      rgb(0, 0, 0, 0.5),
+      rgb(0, 0, 0, 0)
+    ),
+    url("./../../../images/movies_posters/batman_ver26_xlg.jpg");
+}
+.second_poster_container {
+  background-image: linear-gradient(
+      to right,
+      rgb(7, 6, 6, 0.9),
+      rgb(7, 6, 6, 0.6),
+      rgb(0, 0, 0, 0.5),
+      rgb(0, 0, 0, 0)
+    ),
+    url("./../../../images/movies_posters/mortal_kombat_ver3_xlg.jpg");
+}
+.third_poster_container{
+  background-image: linear-gradient(
+    to right,
+    rgb(7, 6, 6, 0.9),
+    rgb(7, 6, 6, 0.6),
+    rgb(0, 0, 0, 0.5),
+    rgb(0, 0, 0, 0)
+  ),
+  url("./../../../images/movies_posters/Midway_2019_-_Hollywood_War_WW2_Original_Movie_Poster_f261718e-611c-4143-9a6c-9db2fa9bdf4d.jpg");
+}
+.forth_poster_container{
+  background-image: linear-gradient(
+    to right,
+    rgb(7, 6, 6, 0.9),
+    rgb(7, 6, 6, 0.6),
+    rgb(0, 0, 0, 0.5),
+    rgb(0, 0, 0, 0)
+  ),
+  url("./../../../images/movies_posters/01-cb-dm-mainstage-banner-1900x905-itn-pl-f01-021323-63f816ced06a8-1\ -\ Copy.jpg");
+}
+.info {
+  width: 70%;
+}
+.empty {
+  width: 30%;
+  /* filter: blur(0px); */
+}
+
+ .info {
+  padding: 2% 12%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  color: rgb(255, 255, 255);
+  filter: brightness(20px);
+  text-shadow: 10px;
+  font-size: x-large;
+  text-shadow: white 0px 0 4px;
+}
+
+.rate_and_genre {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.unChoosen {
+  /* position: absolute; */
+  /* z-index: 0.8; */
+  opacity: 0;
+}
+
+.choosen {
+  opacity: 1;
+}
+
+
+.fontSmaller{
+  font-size: large;
+  margin-right: 50px;
+  cursor: pointer;
+  
+  /* z-index: 3; */
+}
+.customAddToList{
+  background-color: black;
+  /* box-shadow: black; */
+}
+.fontSmaller:hover ,.customAddToList:hover {
+
+  background-color: var(--pink);
+
+
+}
+
+.customRate{
+  transform: translate(0%, -10%);
+
+}
+
+.title{
+font-size: 50px;
+}
+
+.overview{
+  font-size: medium;
+}
+
+
+
+
+@media screen and (max-width:1050px){
+  .first_poster_container,
+.second_poster_container,
+.third_poster_container,
+.forth_poster_container{
+  /* background-position:-200px;  */
+
+}
+
+.bigContainer {
+  /* height: 60vh; */
+}
+}
+
+
+
+.all_poster{background-position: center;
+}
+/* .info{
+  height: 30%;
+} */
+
+
+
+@media screen and (max-width:800px){
+
+
+  .nextBtn{
+  left: 80%;
+
+  }
+  .bigContainer {
+    height: 350px;
+    /* width: 97vw; */
+    overflow: hidden;
+
+  }
+  .sectionsContainer , .all_poster{
+    /* height: 80%; */
+    /* width: 95vw; */
+    background-size: cover;
+    /* height: 100%; */
+
+  }
+
+
+  .empty{
+    width: 0;
+  }
+  .title{
+    font-size: 20px;
+    }
+    
+    .overview{
+      font-size: xx-small;
+    }
+
+    .fontSmaller{
+      font-size: xx-small;
+      /* margin-right: 50px; */
+      /* cursor: pointer; */
+      
+    }
+    .info{
+      font-size: small;
+    }
+
+    
+ .info {
+  padding: 4% 12% 2% 12%;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+  color: rgb(255, 255, 255);
+  filter: brightness(20px);
+  text-shadow: 10px;
+  /* font-size: x-large; */
+  text-shadow: white 0px 0 4px;
+}
+.btnsContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-self: center;
+}
+.btnsContainer *{
+  width: 70px;
+}
+
+}
+
+.title{
+  text-shadow: var(--pink) 0px 0 4px;
+  color: antiquewhite;
+
+}
+
+
+@media screen and (max-width:700px){
+
+  .bigContainer {
+    height: 320px;
+    /* overflow:scroll; */
+    /* width: 97vw; */
+
+  }
+
+}
+
+.all_poster{
+  height: 100%;
+}

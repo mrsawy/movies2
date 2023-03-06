@@ -1,0 +1,79 @@
+.rate {
+  border-radius: 100px;
+  background-color: rgb(12, 12, 12);
+  height: 69px;
+  width: 69px;
+  padding: 1%;
+  /* display: inline-block; */
+  text-align: center;
+  /* transform: translateY(%); */
+  transform: translate(10%, 400%);
+  /* border: 8px dotted yellow; */
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  transition: all 0.2s;
+  /* min-width: 75px;
+  height: 75px;  */
+}
+
+.stars {
+  font-size: 11px;
+  /* display: flex;
+      flex-direction: row; */
+  transform: translate(0%, -280%);
+
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.scale {
+  /* margin: auto auto; */
+  /* display: inline-block; */
+  border-radius: 100%;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  border: 3px solid linear-gradient(to left, #333, #51cc51);
+
+  border-image: linear-gradient(15deg, rgb(128, 83, 0), orange) 1;
+  border-radius: 100%;
+
+  /* box-sizing: 10px; */
+  color: antiquewhite;
+  padding-top: 43%;
+  font-size: 10px;
+  background: linear-gradient(rgb(16, 14, 14), rgb(5, 3, 3)) padding-box,
+    linear-gradient(45deg, rgb(199, 205, 90), coral) border-box;
+  border: 3px solid transparent;
+  border-radius: 50px;
+}
+/* .scale::after */
+.scale p {
+  top: 50%;
+  font-size: 2.2em;
+  transform: translateY(-80%);
+  border: none;
+}
+
+@media screen and (max-width: 630px) {
+  .rate {
+    transform: translate(10%, 420%);
+    height: 44px;
+    width: 44px;
+    min-width: 44px;
+  }
+  .scale p {
+    font-size: 10px;
+  }
+  .stars {
+    font-size: 6px;
+    transform: translate(0%, -320%);
+  }
+}
+@media screen and (max-width: 412px) {
+  .rate {
+    transform: translate(5%, 300%);
+  }
+}
